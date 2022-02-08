@@ -20,7 +20,7 @@ const myProjectsService = (function(){
             primaryColor: '#153136',
             secondaryColor: '#F0F1E9',
             imageUrl: 'skum-app-mockup.png',
-            webUrl: '#',
+            webUrl: '/portfolio/skum',
             textColor: '#153136'
         },
     ])

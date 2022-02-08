@@ -8,6 +8,7 @@
                     :imageUrl="object.imageUrl"
                     :textColor="object.textColor"
                     :webUrl="object.webUrl"
+                    :isCaseStudy="object.isCaseStudy"
                />
                
                

@@ -63,17 +63,15 @@
         <portfolio-projects-list />
     </main>
 
-        
-
 </template>
 
 
 <script>
-import MyDesignSkillList from './MyDesignSkills/MyDesignSkillList.vue'
-import SectionTitle from './SectionTitle.vue'
-import TechnologiesList from './TechnologiesSkills/TechnologiesList.vue'
-import WelcomeArticle from './WelcomeArticle.vue'
-import PortfolioProjectsList from './portfolio-projects/PortfolioProjectsList.vue';
+import MyDesignSkillList from '../components/MyDesignSkills/MyDesignSkillList.vue'
+import SectionTitle from '../components/SectionTitle.vue'
+import TechnologiesList from '../components/TechnologiesSkills/TechnologiesList.vue'
+import WelcomeArticle from '../components/WelcomeArticle.vue'
+import PortfolioProjectsList from '../components/portfolio-projects/PortfolioProjectsList.vue';
 export default {
   components: { SectionTitle, WelcomeArticle, TechnologiesList, MyDesignSkillList, PortfolioProjectsList, },
     

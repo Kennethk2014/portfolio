@@ -6,7 +6,10 @@
         <div class="col-12 col-md-5 order-md-1">
             <h3 :style="{color: `${textColor}`}">{{title}}</h3>
             <p :style="{color: `${textColor}`}">{{description}}</p>
-            <a :style="{color: `${textColor}`}" :href="webUrl" target="_blank">See More <i :style="{color: `${primaryColor}`}" class="fas fa-arrow-right"></i></a>
+
+            
+            <a v-if="isCaseStudy == false" :style="{color: `${textColor}`}" :href="webUrl" target="_blank">See More <i :style="{color: `${primaryColor}`}" class="fas fa-arrow-right"></i></a>
+            <router-link v-else :to="webUrl"  :style="{color: `${textColor}`}" >See More <i :style="{color: `${primaryColor}`}" class="fas fa-arrow-right"></i></router-link>
 
         </div>
     </section>
@@ -22,6 +25,7 @@ export default {
         imageUrl: String,
         webUrl: String,
         textColor: String,
+        isCaseStudy: Boolean,
     }
 }
 </script>
