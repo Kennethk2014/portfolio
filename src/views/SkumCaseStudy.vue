@@ -45,7 +45,7 @@
                     </div>
                 </section>
                 <!-- PROBLEM POINTS AND SOLUTIONS -->
-                <div class="row mt-5">
+                <div class="row justify-content-lg-center mt-5">
                     <section class="col-12 col-md-6 col-lg-5 ">
                         <h4>Problem <span class="span-light">Points</span></h4>
                         <div class="row mt-4">
