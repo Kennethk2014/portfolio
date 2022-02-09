@@ -16,7 +16,7 @@ const myProjectsService = (function(){
         {
             title: 'Skum',
             description: 'An app to give beer enthusiasts an easy to use platform where they can discover new beer and share their discoveries with friends.',
-            isCaseStudy: false,
+            isCaseStudy: true,
             primaryColor: '#153136',
             secondaryColor: '#F0F1E9',
             imageUrl: 'skum-app-mockup.png',

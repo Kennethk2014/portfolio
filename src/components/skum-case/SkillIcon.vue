@@ -24,5 +24,14 @@ i{
 }
 p{
     font-size: 0.8rem;
+    color: rgba(21, 49, 54, 0.87);
+}
+@media screen and (min-width: 1024px) {
+    i{
+        font-size:  2rem;
+    }
+    p{
+        font-size: 1.15rem;
+    }
 }
 </style>

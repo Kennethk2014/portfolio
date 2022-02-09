@@ -69,6 +69,9 @@ export default {
     .problem{
         position: relative;
     }
+    p{
+        color: rgba(21, 49, 54, 0.67);
+    }
     .problem::before{
         color: #F0F1E9;
         background-color: #DB7B7B;
