@@ -131,8 +131,53 @@
                         </div>
                     </div>
                 </section>
+
+
+                <section class="mt-5">
+                    <h4 class="col-12">Design <span class="span-colored">Phase</span></h4>
+
+                    <section>
+                         <custom-subtitle
+                        title="Lo-fi Wireframing / Paper Sketches"
+                        class="col-12 mt-4 lo-wf"
+                        />
+                        <div class="row">
+                            <div class="col-4">
+                                <div>
+                                    <img class="img-fluid rounded" :src="require('@/assets/images/skum-pf/lo-fi-profil1.png')" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div>
+                                    <img class="img-fluid rounded" :src="require('@/assets/images/skum-pf/lo-fi-profil2.png')" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div>
+                                    <img class="img-fluid rounded" :src="require('@/assets/images/skum-pf/lo-fi-start.png')" alt="" srcset="">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
             </section>
         </main>
+        <section class="container-fluid hi-fi-section py-3">
+            <section class="mt-5">
+                <div class="row justify-content-center">
+                <custom-subtitle
+                    title="Hi-Fi Wireframing"
+                    class="col-12 mb-4 col-md-11 hi-fi-title"
+                />
+                    <div class="col-12 col-md-6">
+                        <img class="img-fluid" :src="require('@/assets/images/skum-pf/prototypes.png')" alt="">
+                    </div>
+                    <div class="col-8 col-md-4 mt-3 mt-md-0">
+                        <img class="img-fluid" :src="require('@/assets/images/skum-pf/prototypes2.png')" alt="">
+                    </div>
+                </div>
+            </section>
+        </section>
     </div>
 </template>
 
@@ -225,7 +270,26 @@ header{
     font-size: .8rem;
     color: rgba(21, 49, 54, 0.87);
 }
+.lo-wf::after{
+    position: relative;
+    top: -1rem;
+    content: "Once we had a clear idea what the different pages should include. We all started sketching out our thoughts.  I focused on the landing page and the profile page, sketching out a couple of different versjons to begin with.";
+    font-size: .8rem;
+    color: rgba(21, 49, 54, 0.87);
+}
+.hi-fi-section{
+    background: #fdfdfd url('../assets/images/skum-pf/wave.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
 
+}
+.hi-fi-title::after{
+    position: relative;
+    top: -1rem;
+    content: "Based on discussions with the team we found the layout we that best matched what would appeal to our users. We then began expanding upon that design";
+    font-size: .8rem;
+    color: rgba(21, 49, 54, 0.87);
+}
 
 @media screen and (min-width: 1024px) {
     h2{
@@ -253,5 +317,12 @@ header{
     .cs-org::after{
         font-size: 1.2rem;
     }
+    .lo-wf::after{
+        font-size: 1.2rem;
+    }
+    .hi-fi-title::after{
+        font-size: 1.2rem;
+    }
 }
+
 </style>
