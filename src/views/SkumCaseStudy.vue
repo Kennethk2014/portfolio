@@ -191,6 +191,7 @@ import SkillIcon from '../components/skum-case/SkillIcon.vue'
 import PerspectiveCardList from '../components/PerspectiveCard/PerspectiveCardList.vue';
 export default {
   components: { HeaderSection, SkillIcon, ProblemsAndSolutions, DesignProcessList, CustomSubtitle, PerspectiveCardList },
+  
     
 }
 </script>
