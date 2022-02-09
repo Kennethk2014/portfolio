@@ -107,7 +107,29 @@
                     <div class="row justify-content-center">
                         <perspective-card-list />
                     </div>
+                </section>
 
+                <section class="mt-5">
+                    <custom-subtitle
+                        title="Starting to conceptualize what we need"
+                        class="sub-concept col-12"
+                    />
+                    <div class="row justify-content-md-between">
+                        <img class="img-fluid col-12 col-md-4"  :src="require('@/assets/images/skum-pf/whiteboard.jpg')" alt="whiteboard with post-it-notes">
+                        <img class="img-fluid col-md-7 d-none d-md-block"  :src="require('@/assets/images/skum-pf/product-teardown.svg')" alt="whiteboard with post-it-notes">
+                    </div>
+                </section>
+
+                <section class="mt-5">
+                    <custom-subtitle
+                        title="Organizing everything so it’s easier to understand"
+                        class="cs-org col-12"
+                    />
+                    <div class="col-12 mt-3">
+                        <div>
+                            <img class="img-fluid" :src="require('@/assets/images/skum-pf/architecture.png')" alt="">
+                        </div>
+                    </div>
                 </section>
             </section>
         </main>
@@ -189,6 +211,20 @@ header{
     color: rgba(21, 49, 54, 0.87);
     font-size: .8rem;
 }
+.sub-concept::after{
+    position: relative;
+    top: -1rem;
+    content: "Getting every important element down on paper then creating the information architecture.";
+    font-size: .8rem;
+    color: rgba(21, 49, 54, 0.87);
+}
+.cs-org::after{
+    position: relative;
+    top: -1rem;
+    content: "This was further refining  the earlier hand-written post-it notes. Some of the categories could go under several of the pages, and we had to make that clear.";
+    font-size: .8rem;
+    color: rgba(21, 49, 54, 0.87);
+}
 
 
 @media screen and (min-width: 1024px) {
@@ -209,6 +245,12 @@ header{
         font-size: 1.2rem;
     }
     .dive::after{
+        font-size: 1.2rem;
+    }
+    .sub-concept::after{
+        font-size: 1.2rem;
+    }
+    .cs-org::after{
         font-size: 1.2rem;
     }
 }

@@ -1,28 +1,35 @@
 <template>
     <header class="container-fluid">
-        <section class="row header-section align-items-center justify-content-center">
-        <div class="circle" />
-            <div class="col-12 text-center">
-                <div class="text-container">
-                    <p class="text-light before-text">I AM</p>
-                    <h3 class="header-title">KENNETH</h3>
-                    <p class="after-text">WEB DEVELOPER &amp; UX DESIGNER</p>
-                    <p class="after-text-p">In Oslo</p>
+        <kinesis-container>
+            <section class="row header-section align-items-center justify-content-center">
+            
+            <div class="circle" />
+                <div class="col-12 text-center">
+                        <kinesis-element :strength="20"
+                            type="depth"
+                        >
+                            <div class="text-container">
+                                <p class="text-light before-text">I AM</p>
+                                <h3 class="header-title">KENNETH</h3>
+                                <p class="after-text">WEB DEVELOPER &amp; UX DESIGNER</p>
+                                <p class="after-text-p">In Oslo</p>
+                            </div>
+                        </kinesis-element>
                 </div>
-            </div>
 
-                <div class="some-container">
-                    <a href="https://github.com/Kennethk2014" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.instagram.com/kenneth_snaps/" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCOLRelNcnNcQvxNwvhlJ-bQ" target="_blank">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-        </section>
+                    <div class="some-container">
+                        <a href="https://github.com/Kennethk2014" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/kenneth_snaps/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCOLRelNcnNcQvxNwvhlJ-bQ" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+            </section>
+        </kinesis-container>
     </header>
 
     <aside class="container">
@@ -72,8 +79,9 @@ import SectionTitle from '../components/SectionTitle.vue'
 import TechnologiesList from '../components/TechnologiesSkills/TechnologiesList.vue'
 import WelcomeArticle from '../components/WelcomeArticle.vue'
 import PortfolioProjectsList from '../components/portfolio-projects/PortfolioProjectsList.vue';
+import {KinesisContainer, KinesisElement} from 'vue-kinesis';
 export default {
-  components: { SectionTitle, WelcomeArticle, TechnologiesList, MyDesignSkillList, PortfolioProjectsList, },
+  components: {KinesisContainer, KinesisElement, SectionTitle, WelcomeArticle, TechnologiesList, MyDesignSkillList, PortfolioProjectsList, },
     
 }
 </script>
@@ -104,7 +112,7 @@ i:hover{
     color: #C53D3C;
 }
 .circle{
-    filter: blur(10rem);
+    filter: blur(8rem);
     border-radius: 100%;
     width: 200px;
     height: 200px;
@@ -207,6 +215,9 @@ i:hover{
 
     }
     .circle{
+        width: 350px;
+        height: 350px;
+        filter: blur(11rem);
         animation: circleMovement 28s 0s infinite;
     }
     i{
