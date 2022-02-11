@@ -32,7 +32,7 @@ export default {
 
 <style scoped>
 .img-container{
-    width: calc(100vw / 3.5rem);
+    width: 100%;
     aspect-ratio: 1;
     background: rgba(0,0,0,0.08);
     display: flex;

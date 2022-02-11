@@ -177,6 +177,9 @@
                     </div>
                 </div>
             </section>
+        <footer class="row text-center py-3">
+            <p class="u-dvlp">UNDER DEVELOPMENT</p>
+        </footer>
         </section>
     </div>
 </template>
@@ -198,6 +201,11 @@ export default {
 
 
 <style scoped>
+.u-dvlp{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: rgba(21, 49, 54, 0.17);
+}
 .skum-case-study{
     background: #F0F1E9;
     color: #153136;
@@ -293,6 +301,9 @@ header{
 }
 
 @media screen and (min-width: 1024px) {
+    .u-dvlp{
+        font-size: 4rem;
+    }
     h2{
         font-size: 4rem;
     }
