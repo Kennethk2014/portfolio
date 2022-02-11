@@ -1,12 +1,12 @@
 <template>
-    <form type="submit">
+    <form type="submit" @submit="handleSubmit">
         <custom-form-item 
             type="text"
             placeholder="your name"
             formLabel="Name"
             :textarea="false"
             class="col-12"
-            :value="name"
+            v-model="name"
         />
         <custom-form-item 
             type="email"
@@ -14,7 +14,7 @@
             formLabel="Email Address"
             :textarea="false"
             class="col-12"
-            :value="email"
+            v-model="email"
         />
         <custom-form-item 
             type="text"
@@ -23,13 +23,12 @@
             rows="4"
             :textarea="true"
             class="col-12"
-            :value="message"
+            v-model="message"
         />
         <custom-button
             value="Submit"
             type="submit"
             className="btn btn-outlined"
-            @click="handleSubmit"
         />
     </form>
 </template>
@@ -46,9 +45,9 @@ export default {
     },
 
     setup(){
-        let name = ref();
-        let email = ref();
-        let message = ref();
+        let name = ref('');
+        let email = ref('');
+        let message = ref('');
 
         const handleSubmit = async e => {
             e.preventDefault();

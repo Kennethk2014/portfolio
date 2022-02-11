@@ -1,11 +1,31 @@
 <template>
     <div v-if="textarea === true" class="mb-3" :textarea="textarea">
         <label :for="formLabel" class="form-label">{{formLabel}}</label>
-        <textarea v-model="value" class="form-control py-3" :rows="rows" :id="formLabel" :placeholder="placeholder"></textarea>
+        <textarea v-bind="{
+            ...$attrs,
+            onChange: (event) => $emit('update:modelValue',
+            event.target.value)}"
+            :value="modelValue"
+            class="form-control py-3" 
+            :rows="rows" 
+            :id="formLabel" 
+            :placeholder="placeholder"
+            required="true"
+            ></textarea>
     </div>
     <div v-else class="mb-3" :textarea="textarea">
         <label :for="formLabel" class="form-label">{{formLabel}}</label>
-        <input v-model="value" :type="type" class="form-control py-3" :id="formLabel" :placeholder="placeholder">
+        <input v-bind="{
+            ...$attrs,
+            onChange: (event) => $emit('update:modelValue',
+            event.target.value)}"
+            :value="modelValue" 
+            :type="type" 
+            class="form-control py-3" 
+            :id="formLabel" 
+            :placeholder="placeholder"
+            required="true"
+            >
     </div>
 
 </template>
@@ -19,7 +39,7 @@ export default {
         placeholder: String,
         rows: String,
         textarea: Boolean,
-        value: String,
+        modelValue: String,
     },
 }
 </script>
