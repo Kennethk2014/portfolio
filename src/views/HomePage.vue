@@ -69,7 +69,13 @@
     <main class="container-fluid">
         <portfolio-projects-list />
     </main>
-
+    <!-- FOOTER CONTENT WITH CONTACT ME FORM -->
+    <footer class="container py-5">
+        <section-title :isHeading="true" title="CONTACT ME"></section-title>
+            <section class="row mt-4">
+              <custom-form-list></custom-form-list>
+        </section>
+    </footer>
 </template>
 
 
@@ -80,8 +86,9 @@ import TechnologiesList from '../components/TechnologiesSkills/TechnologiesList.
 import WelcomeArticle from '../components/WelcomeArticle.vue'
 import PortfolioProjectsList from '../components/portfolio-projects/PortfolioProjectsList.vue';
 import {KinesisContainer, KinesisElement} from 'vue-kinesis';
+import CustomFormList from '../components/CustomForm/CustomFormList.vue'
 export default {
-  components: {KinesisContainer, KinesisElement, SectionTitle, WelcomeArticle, TechnologiesList, MyDesignSkillList, PortfolioProjectsList, },
+  components: {KinesisContainer, KinesisElement, SectionTitle, WelcomeArticle, TechnologiesList, MyDesignSkillList, PortfolioProjectsList, CustomFormList},
     
 }
 </script>
