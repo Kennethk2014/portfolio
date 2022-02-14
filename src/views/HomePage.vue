@@ -17,7 +17,8 @@
                         </kinesis-element>
                 </div>
 
-                    <div class="some-container">
+                
+                   <div class="some-container">
                         <a href="https://github.com/Kennethk2014" target="_blank">
                             <i class="fab fa-github"></i>
                         </a>
@@ -27,7 +28,8 @@
                         <a href="https://www.youtube.com/channel/UCOLRelNcnNcQvxNwvhlJ-bQ" target="_blank">
                             <i class="fab fa-youtube"></i>
                         </a>
-                    </div>
+                    </div> 
+                    
             </section>
         </kinesis-container>
     </header>
@@ -37,9 +39,9 @@
                 <div class="col col-12 title-container mb-4">
                     <section-title :isHeading="true" title="ABOUT ME"></section-title>
                 </div>
-                <div class="img-container col-12 col-md-5 col-lg-6 mt-3">
-                    <img class="img-fluid " src="../assets/images/profile-image.jpg" alt="photography of me">
-                </div>
+                    <div class="img-container col-12 col-md-5 col-lg-6 mt-3">
+                        <img class="img-fluid " src="../assets/images/profile-image.jpg" alt="photography of me">
+                    </div>
 
 
                 <div class="col-12 col-md-7 col-lg-6 mt-2">

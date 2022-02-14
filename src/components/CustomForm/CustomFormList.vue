@@ -38,6 +38,7 @@
 import CustomButton from '../CustomButton/CustomButton.vue';
 import CustomFormItem from './CustomFormItem.vue';
 import {ref} from 'vue'
+import messageService from '../../services/messageService';
 export default {
     components: {
         CustomFormItem,
@@ -45,18 +46,16 @@ export default {
     },
 
     setup(){
+        let allMessages = messageService.getAllMessages();
         let name = ref('');
         let email = ref('');
         let message = ref('');
 
         const handleSubmit = async e => {
             e.preventDefault();
+            messageService.pushToMessageArray(name.value, email.value, message.value)
             console.log(
-                `
-                name: ${name.value},
-                email: ${email.value},
-                message: ${message.value} 
-                `
+                allMessages.value
             )
 
             name.value = ''

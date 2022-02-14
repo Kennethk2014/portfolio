@@ -1,15 +1,18 @@
 <template>
+<the-navbar></the-navbar>
   <div class="app">
       <router-view />
   </div>
 </template>
 
 <script>
+import TheNavbar from './components/TheNavbar/TheNavbar.vue'
 
 
 export default {
   name: 'App',
   components: {
+    TheNavbar
 
   },
 
@@ -25,7 +28,7 @@ export default {
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(4, 2, 1);
+  background: rgb(3, 4, 11);
 }
 
 </style>

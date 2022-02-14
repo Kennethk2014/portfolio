@@ -47,19 +47,22 @@ export default {
 <style scoped>
 
     label{
-        color: rgba(255,255,255,0.87);
+        color: #C53D3C;
         font-weight: 600;
     }
     input{
         background: rgba(255,255,255,0.1);
         border: none;
         color: rgba(255,255,255,0.87);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     }
     textarea{
         background: rgba(255,255,255,0.1);
         border: none;
         color: rgba(255,255,255,0.87);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     }
+    
 </style>
 
 
