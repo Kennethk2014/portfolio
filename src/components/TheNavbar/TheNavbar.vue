@@ -1,77 +1,52 @@
 <template>
-<div class="container-fluid wrapper">
 
 
-    <nav class="navbar navbar-expand-md">
+
+    <nav class="navbar sticky-top navbar-expand-md" style="background-color: #fdfdfd;">
         <div class="container">
-            <router-link class="navbar-brand" to="/">
+            <a class="navbar-brand" href="/#home">
             <img :src="require('@/assets/images/LogoPortfolio.svg')" alt="" height="50">
-            </router-link>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <router-link to="/" class="nav-link active" aria-current="page">Home</router-link>
+            <div class="collapse navbar-collapse container justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item navbar-text">
+                        <a href="/#expertise" class="nav-link text-anim" aria-current="page">Expertise</a>
+                    </li>
+                    <li class="nav-item navbar-text">
+                        <a href="/#portfolio" class="nav-link text-anim" aria-current="page">Portfolio</a>
+                    </li>
+                    <li class="nav-item navbar-text">
+                        <router-link to="/none" class="nav-link text-anim" aria-current="page">About</router-link>
                     </li>
                     <li class="nav-item">
-                        <custom-button
-                            type="button"
-                            className="btn btn-primary"
-                            value="Sign in"
-                            data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                        ></custom-button>
+                        <router-link to="/none" class="nav-link" aria-current="page"><custom-button type="button" class="btn-primary" value="Let's talk"></custom-button></router-link>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-</div>
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <custom-form-item
-            formLabel="Admin Password"
-            type="password"
-            v-model="userInputPassword"
-        ></custom-form-item>
-      </div>
-      <div class="modal-footer">
-        <custom-button type="button" className="btn btn-tetriary" data-bs-dismiss="modal" value="Close"></custom-button>
-        <button type="button" @click="handleClick" class="btn btn-primary">Confirm</button>
-      </div>
-    </div>
-  </div>
-</div>
+
+
 </template>
 
 
 <script>
-import CustomButton from '../CustomButton/CustomButton.vue';
-import CustomFormItem from '../CustomForm/CustomFormItem.vue';
-import userService from '../../services/userService';
-import {ref} from 'vue';
+import CustomButton from '../CustomButton/CustomButton.vue'
+
+
+
 export default {
-    components: {CustomFormItem, CustomButton},
+  components: { CustomButton },
+
     setup(){
-        let userInputPassword = ref();
-        let allUserService = userService.getUserAdmin();
 
-        const handleClick = () => {
-            console.log(allUserService.isCorrect)
-            userService.setIsCorrect(userInputPassword.value);
-            console.log(allUserService.isCorrect)
-        }
 
+    
         return{
-            userInputPassword,
-            handleClick
+
         }
     }
 }
@@ -79,16 +54,49 @@ export default {
 
 
 <style scoped>
-.wrapper{
-    z-index: 999;
-    position: fixed;
-    background: rgba(242, 242, 242, 0.064);
-    backdrop-filter: blur(1rem);
-}
-.modal{
-    z-index: 9999;
+
+.navbar{
+    box-shadow: 0px 2px 20px rgba(75, 79, 73, 0.1);
 }
 .nav-link{
-    color: white;
+    color: #212121;
+    font-weight: 500;
+}
+.text-anim{
+    position: relative;
+    display: inline-block;
+
+}
+.text-anim::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0%;
+    background: #212121;
+    height: 2px;
+    transition: all 200ms ease-out;
+}
+.text-anim:hover::after{
+    width: 50%;
+}
+
+.navbar-toggler-icon{
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 </style>
+.section-header{
+    position: relative;
+    display: inline-block;
+}
+.section-header::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0%;
+    background: #212121;
+    height: 5px;
+    transition: all 200ms ease-out;
+}
+.section-header:hover::after{
+    width: 100%;
+}

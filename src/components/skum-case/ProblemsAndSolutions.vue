@@ -1,6 +1,6 @@
 <template>
     <article class="counters">
-        <ul v-if="isProblem == false">
+        <ul v-if="!isProblem">
            <li>
                <p class="problem">
                     A customer today is often in a rush which in turn makes searching for places that has their go-to beer sort in store a tideous task.  

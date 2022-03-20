@@ -1,5 +1,5 @@
 <template>
-                        <input :type="type" :value="value" :class="className" >
+                        <button :type="type"  :class="className" >{{value}}</button>
 </template>
 
 <script>
@@ -13,23 +13,38 @@ export default {
 </script>
 <style scoped>
 .btn-outlined{
-    border: 1px solid rgb(197, 61, 60);
-    color: #C53D3C;
+    border-radius: 1px;
+    padding: 10px 20px;
+    border: 2px solid #4C4D47;
+    color: #4C4D47;
+    background: transparent;
+    transition: all 50ms ease-out;
 }
-.btn-primary{
-    background: #C53D3C;
+.btn-outlined:hover{
+    background: #4C4D47;
     color: rgba(255,255,255,0.87);
+    
+    }
+
+
+.btn-primary{
     border: none;
+    border-radius: 1px;
+    padding: 10px 20px;
+    background: #4C4D47;
+    color: rgba(255,255,255,0.87);
+    font-weight: 500;
+    position: relative;
 }
+.btn-primary:hover{
+    box-shadow: 0px 10px 20px rgba(76, 77, 71, 0.1);
+    background: #363732;
+
+}
+
 .btn-tetriary{
     
     border: none;
-    color: #C53D3C;
+    color: #4C4D47;
     }
-.btn-outlined:hover{
-    box-shadow: 0px 0px 20px rgba(197, 61, 60, 0.6);
-    border: 1px solid #C53D3C;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #C53D3C;
-}
 </style>
