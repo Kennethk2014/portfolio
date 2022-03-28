@@ -15,13 +15,13 @@ export default {
 .btn-outlined{
     border-radius: 1px;
     padding: 10px 20px;
-    border: 2px solid #4C4D47;
-    color: #4C4D47;
+    border: 2px solid #2B331D;
+    color: #2B331D;
     background: transparent;
     transition: all 50ms ease-out;
 }
 .btn-outlined:hover{
-    background: #4C4D47;
+    background: #2B331D;
     color: rgba(255,255,255,0.87);
     
     }
@@ -31,7 +31,7 @@ export default {
     border: none;
     border-radius: 1px;
     padding: 10px 20px;
-    background: #4C4D47;
+    background: #2B331D;
     color: rgba(255,255,255,0.87);
     font-weight: 500;
     position: relative;
@@ -45,6 +45,6 @@ export default {
 .btn-tetriary{
     
     border: none;
-    color: #4C4D47;
+    color: #2B331D;
     }
 </style>

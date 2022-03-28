@@ -19,7 +19,7 @@
                         <a href="/#portfolio" class="nav-link text-anim" aria-current="page">Portfolio</a>
                     </li>
                     <li class="nav-item navbar-text">
-                        <router-link to="/none" class="nav-link text-anim" aria-current="page">About</router-link>
+                        <router-link to="/about" class="nav-link text-anim" aria-current="page">About</router-link>
                     </li>
                     <li class="nav-item">
                         <router-link to="/none" class="nav-link" aria-current="page"><custom-button type="button" class="btn-primary" value="Let's talk"></custom-button></router-link>

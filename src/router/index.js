@@ -1,6 +1,7 @@
 import {createRouter, createWebHistory } from "vue-router";
 import HomePage from '../views/HomePage.vue';
 import SkumCaseStudy from '../views/SkumCaseStudy.vue';
+import AboutPage from '../views/AboutPage.vue';
 
 const routes = [
     {
@@ -12,6 +13,11 @@ const routes = [
         path: '/portfolio/skum',
         name: 'Skum Case Study',
         component: SkumCaseStudy,
+    },
+    {
+        path: '/about',
+        name: 'About',
+        component: AboutPage,
     },
 ]
 

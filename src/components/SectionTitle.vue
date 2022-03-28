@@ -1,6 +1,7 @@
 <template>
     <div class="title-container">
         <h4 class="header" >{{title}}</h4>
+        <p class="desc">{{description}}</p>
     </div>
 </template>
 
@@ -9,6 +10,7 @@
 export default {
     props: {
         title: String,
+        description: String,
     }
 }
 </script>
@@ -24,7 +26,9 @@ export default {
         font-weight: 500;
         font-size: 1.5rem;
     }
-
+.desc{
+    color: #666666;
+}
 
   
 </style>
