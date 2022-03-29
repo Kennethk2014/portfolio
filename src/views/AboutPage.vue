@@ -3,10 +3,10 @@
         <header class="container py-5">
             <section class="row justify-content-between">
 
-                <div class="img-container mt-5 mt-md-0 col-12 col-md-5 col-lg-5">
+                <div class="img-container order-2 order-md-1 mt-5 mt-md-0 col-12 col-md-5 col-lg-5">
                     <img class="img-fluid header-image" src="../assets/images/about-me-image.jpg" alt="photography of me">
                 </div>
-                <div class="col-12 pt-4 col-md-6 title-container">
+                <div class="col-12 pt-4 order-1 order-md-2 col-md-6 title-container">
                     <h1 class="header-title">We meet again, at last.</h1>
                     <p class="header-subtitle mt-md-4">I'm a norwegian UX-design &amp; web-developer student based in Norway. I am available for interships, full-time roles and freelance project.</p>
                     <div class="some-container row">
@@ -19,23 +19,69 @@
             </section>
         </header>
         <main class="container py-5">
-            <h3 class="design-process-headline my-5 py-5">My design process for web</h3>
-            <section class="row design-row justify-content-between design-process-section">
-            <section-title
-            class="col-12 col-lg-3 dp-card" 
-            title="Explore"
-            description="My first step is to really understand the project / problem. In this phase i identify the target group, create user stories and analyses competitors." 
-            />
-            <section-title
-            class="col-12 col-lg-3 dp-card" 
-            title="Design"
-            description="Create the information architecture. Design low-fidelity wireframes, feedback from product owners and then develop a high fidelity prototype. " 
-            />
-            <section-title
-            class="col-12 col-lg-3 dp-card" 
-            title="Testing"
-            description="Conducting interviews for usability testing, analyzing feedback, talk with the target group and iterate the design." 
-            />
+            <h3 class="design-process-headline my-5 pt-5">My design process for web</h3>
+            <section class="row design-row justify-content-center design-process-section">
+            <div class="col-12 col-lg-4">
+                <section-title
+                class="dp-card" 
+                title="Explore"
+                description="My first step is to really understand the project / problem. In this phase i identify the target group, create user stories and analyses competitors." 
+                />
+            </div>
+            <div class="col-12 col-lg-4">
+                <section-title
+                class="dp-card" 
+                title="Design"
+                description="Create the information architecture. Design low-fidelity wireframes, feedback from product owners and then develop a high fidelity prototype. " 
+                />
+            </div>
+            <div class="col-12 col-lg-4">
+                <section-title
+                class="dp-card" 
+                title="Test"
+                description="Conducting interviews for usability testing, analyzing feedback, talk with the target group and iterate the design." 
+                />
+            </div>
+            </section>
+
+            <section class="design-experience my-5 py-5">
+                <h3 >Experience &amp; Education</h3>
+                <div class="row pt-4">
+                    <div class="col-12">
+                        <experience-card
+                        class="experience-card"
+                        :isWork="true" 
+                        year="2021 - present"
+                        title="Student assistant"
+                        desc="Høyskolen Kristiania - Helping students learn HTML, CSS &amp; JavaScript"
+                        />
+                    </div>
+                    <div class="col-12">
+                        <experience-card
+                        class="experience-card"
+                        :isWork="true" 
+                        year="dec 2020 - mar 2021"
+                        title="Software Developer Intern"
+                        desc="Zeipt AS - 3 Month internship focused on front-end. Tasked with creating portfolio in React"
+                        />
+                    </div>
+                    <div class="col-12">
+                        <experience-card
+                        class="experience-card"
+                        :isWork="false" 
+                        year="Aug 2020 - present"
+                        title="IT - Interactive Design"
+                        desc="Bachelor - UX Design, Front-end development"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section class="cta-section col-12 text-center">
+                <h3>Have a project in mind?</h3>
+                <custom-button
+                value="Get in touch"
+                class="btn-primary mt-3"
+                />
             </section>
         </main>
     </div>
@@ -45,8 +91,10 @@
 <script>
 import {gsap} from 'gsap';
 import SectionTitle from '../components/SectionTitle.vue';
+import ExperienceCard from '../components/ExperienceCard/ExperienceCard.vue';
+import CustomButton from '../components/CustomButton/CustomButton.vue';
 export default {
-  components: { SectionTitle },
+  components: { CustomButton, SectionTitle, ExperienceCard },
     mounted(){
         gsap.fromTo('.header-title', 
         {
@@ -104,16 +152,17 @@ a{
     font-size: 1.5rem;
     transition: all 200ms ease-in-out;
     border: 1px solid rgba(0,0,0,0.0);
+    
 }
 .dp-card{
     border-top: 1px solid #A1A1A1;
     /* border-bottom: 1px solid #A1A1A1; */
     padding: 2rem 0rem 2rem 0rem;
-    height: 150px;
 }
+
 a:hover{
     border: 1px solid rgba(0,0,0,0.1);
-    box-shadow: 0px 4px 30px rgba(132, 233, 68, 0.2);
+    box-shadow: 0px 8px 20px rgba(55, 55, 55, 0.1);
 }
 .design-process-headline::after{
     display: block;
@@ -138,10 +187,12 @@ h3{
         font-size: 3rem;
     }
 .dp-card{
-    border-top: 1px solid #A1A1A1;
-    padding: 2rem 0rem 2rem 0rem;
-    height: 280px;
+    border-top: none;
+    border-right: 1px solid #A1A1A1;
+    padding: 2rem .5rem 0rem 0rem;
+    height: 200px;
 }
+
 }
 @media screen and (min-width: 1440px) {
     .header-title{

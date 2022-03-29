@@ -4,7 +4,7 @@
 
     <nav class="navbar sticky-top navbar-expand-md" style="background-color: #fdfdfd;">
         <div class="container">
-            <a class="navbar-brand" href="/#home">
+            <a class="navbar-brand" href="/portfolio/#home">
             <img :src="require('@/assets/images/LogoPortfolio.svg')" alt="" height="50">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,10 +13,10 @@
             <div class="collapse navbar-collapse container justify-content-end" id="navbarNav">
                 <ul class="navbar-nav ">
                     <li class="nav-item navbar-text">
-                        <a href="/#expertise" class="nav-link text-anim" aria-current="page">Expertise</a>
+                        <a href="/portfolio/#expertise" class="nav-link text-anim" aria-current="page">Expertise</a>
                     </li>
                     <li class="nav-item navbar-text">
-                        <a href="/#portfolio" class="nav-link text-anim" aria-current="page">Portfolio</a>
+                        <a href="/portfolio/#portfolio" class="nav-link text-anim" aria-current="page">Portfolio</a>
                     </li>
                     <li class="nav-item navbar-text">
                         <router-link to="/about" class="nav-link text-anim" aria-current="page">About</router-link>
