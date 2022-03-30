@@ -78,10 +78,11 @@
             </section>
             <section class="cta-section col-12 text-center">
                 <h3>Have a project in mind?</h3>
-                <custom-button
+                <router-link to="/contact"> <custom-button
                 value="Get in touch"
                 class="btn-primary mt-3"
                 />
+                </router-link>
             </section>
         </main>
     </div>

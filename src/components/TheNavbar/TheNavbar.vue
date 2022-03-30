@@ -22,7 +22,7 @@
                         <router-link to="/about" class="nav-link text-anim" aria-current="page">About</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link to="/none" class="nav-link" aria-current="page"><custom-button type="button" class="btn-primary" value="Let's talk"></custom-button></router-link>
+                        <router-link to="/contact" class="nav-link" aria-current="page"><custom-button type="button" class="btn-primary" value="Let's talk"></custom-button></router-link>
                     </li>
                 </ul>
             </div>

@@ -5,7 +5,7 @@
                 <div class="col-12  col-md-6 title-container">
                     <h1 class="header-title">Hi, I’m Kenneth. <br>I help give lasting first impressions using design.</h1>
                     <p class="header-subtitle mt-md-4">First impressions is hard. By using design prinsiples and human-centered design, your website will stand out from the competition.</p>
-                    <custom-button class="btn-outlined" type="button" value="Contact me"></custom-button>                    
+                    <router-link to="/contact"><custom-button class="btn-outlined" type="button" value="Contact me"></custom-button></router-link>                    
                 </div>
                 <div class="img-container mt-5 mt-md-0 col-12 col-md-5 col-lg-5">
                     <img class="img-fluid header-image" src="../assets/images/profil-image.jpg" alt="photography of me">
@@ -19,7 +19,6 @@
             <div class="row justify-content-between mt-4">
                 <my-design-skill-list></my-design-skill-list>
             </div>
-            
         </section>
     </main>
 
