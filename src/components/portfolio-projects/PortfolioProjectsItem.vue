@@ -1,11 +1,11 @@
 <template>
     <section class="row pt-5 justify-content-center justify-content-md-between justify-content-lg-center align-items-md-center align-items-center" :style="{backgroundColor: `${secondaryColor}`}">
-        <div class="col-12 col-md-5 align-self-center order-2">
-            <img class="img-fluid" :style="{border: `1px solid ${primaryColor}`}" :src="require(`../../assets/images/${imageUrl}`)" alt="">
+        <div class="col-12 col-md-5 col-lg-6 align-self-center order-2">
+            <img class="img-fluid" :src="require(`../../assets/images/${imageUrl}`)" alt="project mockup">
         </div>
-        <div class="col-12 col-md-5 order-1">
+        <div class="col-12 col-md-7 col-lg-6 order-1">
             <p :style="{color: `${textColor}`}" class="project-type">{{isCaseStudy ? 'Case Study' : 'Website'}}</p>
-            <h3 :style="{color: `${textColor}`}">{{title}}</h3>
+            <h3 :style="{color: `${primaryColor}`}">{{title}}</h3>
             <p :style="{color: `${textColor}`}">{{description}}</p>
 
             
@@ -42,7 +42,7 @@ section{
     height: 100vh;
 }
 h3{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 a{

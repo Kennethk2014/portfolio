@@ -20,26 +20,32 @@
                         <skill-icon 
                             title="Research"
                             icon="fas fa-book-open"
+                            iconColor="#D2B100"
                         />
                         <skill-icon 
                             title="Wireframe"
                             icon="fas fa-image"
+                            iconColor="#D2B100"
                         />
                         <skill-icon 
                             title="UX-design"
                             icon="fas fa-pencil-ruler"
+                            iconColor="#D2B100"
                         />
                         <skill-icon 
                             title="Interview planning"
                             icon="fas fa-comment-dots"
+                            iconColor="#D2B100"
                         />
                         <skill-icon 
                             title="User-scenario"
                             icon="fas fa-users"
+                            iconColor="#D2B100"
                         />
                         <skill-icon 
                             title="Analysis"
                             icon="fas fa-wave-square"
+                            iconColor="#D2B100"
                         />
 
                     </div>
@@ -51,6 +57,10 @@
                         <div class="row mt-4">
                             <problems-and-solutions
                                 :isProblem="false"
+                                p1="A customer today is often in a rush which in turn makes searching for places that has their go-to beer sort in store a tideous task."
+                                p2="Even more annoying is when you taste or get recommended a new beer, but then forget it’s name or what sort it was."
+                                p3="Customers often struggle to find relevant information about tastes of different beer sorts, as in bitterness, sweetness etc."
+                                p4="It’s hard to know where you’ll be able to buy some of these unique beers as they are not sold in every store."
                             />
                         </div>
                     </section>
@@ -60,6 +70,10 @@
                         <div class="row mt-4">
                             <problems-and-solutions
                                 :isProblem="true"
+                                p1="Give customers a platform that helps them discover &amp; explore the current beer market."
+                                p2="Give customers access to a database where they can save their favorite beers to, and create different lists."
+                                p3="Make the most sought after information easily accessible."
+                                p4="Help the customers by adding a section to the product where they can see nearby locations the product they are looking for is in store or not."
                             />
                         </div>
                     </section>

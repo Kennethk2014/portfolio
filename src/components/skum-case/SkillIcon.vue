@@ -1,6 +1,6 @@
 <template>
     <article class="col-4">
-        <i :class="`${icon}`"></i>
+        <i :style="{color: `${iconColor}`}" :class="`${icon}`"></i>
         <p class="">{{title}}</p>
     </article>    
 </template>
@@ -11,6 +11,7 @@ export default {
     props: {
         title: String,
         icon: String,
+        iconColor: String,
     }
 }
 </script>
@@ -20,11 +21,10 @@ export default {
 <style scoped>
 i{
     font-size: 1.5rem;
-    color: #D2B100
 }
 p{
     font-size: 0.8rem;
-    color: rgba(21, 49, 54, 0.87);
+    color: rgba(0, 0, 0, 0.87);
 }
 @media screen and (min-width: 1024px) {
     i{
