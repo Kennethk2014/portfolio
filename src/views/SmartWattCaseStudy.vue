@@ -19,6 +19,7 @@
                 mobileImage="smartwatt-pf/Mobile-Timeline.png"
             />
             
+            <information-architecture />
             <problems-section 
             
             />
@@ -28,6 +29,7 @@
                 image="smartwatt-pf/idemyldring.png"
             />
 
+            <!-- INFORMATION ARCHITECTURE -->
             <design-phase 
             
             />
@@ -136,8 +138,9 @@ import ProjectOverview from '../components/ProjectOverview/ProjectOverview.vue'
 import Timeline from '../components/Timeline/Timeline.vue';
 import ExplorePhase from '../components/ExplorePhase/ExplorePhase.vue';
 import DesignPhase from '../components/DesignPhase/DesignPhase.vue';
+import InformationArchitecture from '../components/InformationArchitecture/InformationArchitecture.vue'
 export default {
-  components: {ProblemsSection, Timeline, HeaderCaseStudy, ProjectOverview, ExplorePhase, DesignPhase },
+  components: {InformationArchitecture, ProblemsSection, Timeline, HeaderCaseStudy, ProjectOverview, ExplorePhase, DesignPhase },
   
     
 }
