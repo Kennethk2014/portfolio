@@ -28,17 +28,17 @@
                 image="smartwatt-pf/idemyldring.png"
             />
 
+            <design-phase 
+            
+            />
+        
+
             <!-- <section class="row mt-5 py-5">
                 
                 
                 <section class="mt-5">
                     <div class="row">
                         <div class="col-12 col-md-7 col-lg-6">
-                            <custom-subtitle 
-                                title="We have our idea, but what’s our target group?"
-                                desc="With data collected from looking at the competitive marked, talking with people and asking around, we came up with one primary target group."
-                                
-                            />
                             <p>Beer enthusiasts in Norway between the ages of 30-50 years. Typical for these poeple is that they have a stable salary and can afford to buy finer and more luxurious beer. They are proud of the knowledge they have about beer and would love to share it with other people.</p>
 
                         </div>
@@ -48,10 +48,6 @@
                 </section>
 
                 <section class="mt-5">
-                    <custom-subtitle 
-                        title="Let’s dive into the mind of our users"
-                        class="dive"
-                    />
                     <div class="row justify-content-center">
                         <perspective-card-list />
                     </div>
@@ -139,8 +135,9 @@ import HeaderCaseStudy from '../components/HeaderCaseStudy/HeaderCaseStudy.vue'
 import ProjectOverview from '../components/ProjectOverview/ProjectOverview.vue'
 import Timeline from '../components/Timeline/Timeline.vue';
 import ExplorePhase from '../components/ExplorePhase/ExplorePhase.vue';
+import DesignPhase from '../components/DesignPhase/DesignPhase.vue';
 export default {
-  components: {ProblemsSection, Timeline, HeaderCaseStudy, ProjectOverview, ExplorePhase },
+  components: {ProblemsSection, Timeline, HeaderCaseStudy, ProjectOverview, ExplorePhase, DesignPhase },
   
     
 }
