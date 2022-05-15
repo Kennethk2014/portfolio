@@ -53,13 +53,13 @@ export default {
 </script>
 
 
-<style scoped>
+<style>
 
 .navbar{
     box-shadow: 0px 2px 20px rgba(75, 79, 73, 0.1);
 }
 .nav-link{
-    color: #212121;
+    color: #212121 !important;
     font-weight: 500;
 }
 .text-anim{

@@ -1,26 +1,25 @@
 <template>
-    <section class="row pt-5 justify-content-center justify-content-md-between justify-content-lg-center align-items-md-center align-items-center" :style="{backgroundColor: `${secondaryColor}`}">
-        <div class="col-12 col-md-5 col-lg-6 align-self-center order-2">
-            <img class="img-fluid" :src="require(`../../assets/images/${imageUrl}`)" alt="project mockup">
+    <article class="col-6">
+        <div class="col">
+            <a v-if="!isCaseStudy" :href="webUrl" target="_blank">
+                <img class="img-fluid" :src="require(`../../assets/images/${imageUrl}`)" alt="project mockup">
+            </a>
+            <router-link v-else :to="webUrl">
+                <img class="img-fluid" :src="require(`../../assets/images/${imageUrl}`)" alt="project mockup">
+            </router-link>
         </div>
-        <div class="col-12 col-md-7 col-lg-6 order-1">
-            <p :style="{color: `${textColor}`}" class="project-type">{{isCaseStudy ? 'Case Study' : 'Website'}}</p>
-            <h3 :style="{color: `${primaryColor}`}">{{title}}</h3>
-            <p :style="{color: `${textColor}`}">{{description}}</p>
-
-            
-            <a v-if="isCaseStudy == false" :style="{color: `${textColor}`}" :href="webUrl" target="_blank">See More <i :style="{color: `${primaryColor}`}" class="fas fa-arrow-right"></i></a>
-            <router-link v-else :to="webUrl"  :style="{color: `${textColor}`}" >See More <i :style="{color: `${primaryColor}`}" class="fas fa-arrow-right"></i></router-link>
-
+        <div class="col text-center mt-2">
+            <h5 style="font-weight: 500;" class="mb-0">{{title}}</h5>
+            <p>{{tags}}</p>
         </div>
-    </section>
+    </article>
 </template>
 
 <script>
 export default {
     props: {
         title: String,
-        description: String,
+        tags: String,
         primaryColor: String,
         secondaryColor: String,
         imageUrl: String,
@@ -32,25 +31,5 @@ export default {
 </script>
 
 <style scoped>
-.project-type{
-    opacity: .67;
-    font-weight: 500;
-    font-size: 1.1rem;
-    margin-bottom: -.5rem;
-}
-section{
-    height: 100vh;
-}
-h3{
-    font-size: 3rem;
-    font-weight: 700;
-}
-a{
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-decoration: none;
-}
-i{
-    margin-left: .8rem;
-}
+
 </style>

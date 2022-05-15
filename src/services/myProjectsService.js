@@ -21,7 +21,8 @@ const myProjectsService = (function(){
             secondaryColor: '#fdfdfd',
             imageUrl: 'smartwatt-app-mockup.jpg',
             webUrl: '/portfolio/smartwatt',
-            textColor: 'rgba(0,0,0,0.87)'
+            textColor: 'rgba(0,0,0,0.87)',
+            tags: 'UI/UX Design, Branding'
         },
         
         {
@@ -30,9 +31,10 @@ const myProjectsService = (function(){
             isCaseStudy: false,
             primaryColor: 'rgba(255,255,255,0.95)',
             secondaryColor: '#252F31',
-            imageUrl: 'photofindr-landingpage@3x.jpg',
+            imageUrl: 'photofindr-closup-mockup.jpg',
             webUrl: 'https://photofindr.com',
-            textColor: 'rgba(255,255,255,0.87)'
+            textColor: 'rgba(255,255,255,0.87)',
+            tags: 'Development, UI/UX Design, Branding'
         },
     ])
 
@@ -40,7 +42,8 @@ const myProjectsService = (function(){
         return projects
     };
 
-    return { getAllProjects }
+    const getProjectByName = (title) => projects.value.filter(project => project.title.toLowerCase() === title.toLowerCase());
+    return { getAllProjects, getProjectByName }
 
 
 }())

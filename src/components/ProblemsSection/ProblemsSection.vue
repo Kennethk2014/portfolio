@@ -52,9 +52,7 @@ export default {
 </script>
 
 <style scoped>
-section{
 
-}
 h3{
     font-size: 2rem;
     font-weight: 700;

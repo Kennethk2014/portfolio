@@ -24,8 +24,8 @@
 
 
 
-    <section class="container py-4" id="portfolio">
-        <h3 class="mt-lg-4 mb-lg-5 py-4 section-header">My Projects</h3>
+    <section class="container py-4 overflow-hidden" id="portfolio">
+        <featured-project/>
         <portfolio-projects-list />
     </section>
 
@@ -36,11 +36,12 @@
 
 import CustomButton from '../components/CustomButton/CustomButton.vue';
 import MyDesignSkillList from '../components/MyDesignSkills/MyDesignSkillList.vue';
+import FeaturedProject from '../components/FeaturedProject/FeaturedProject.vue';
 import PortfolioProjectsList from '../components/portfolio-projects/PortfolioProjectsList.vue';
 import {gsap} from 'gsap';
 
 export default {
-  components: { PortfolioProjectsList, CustomButton, MyDesignSkillList},
+  components: { PortfolioProjectsList, CustomButton, MyDesignSkillList, FeaturedProject},
 
     setup(){
         return{
