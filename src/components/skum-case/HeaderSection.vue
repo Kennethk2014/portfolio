@@ -1,5 +1,5 @@
 <template>
-            <div class="row">
+            <div class="row py-5 py-md-0">
                 <section class="col-12 col-md-6 header-text-container pt-3 pt-md-0 align-self-md-center">
                     <img class="img-fluid img-beer-cap" :src="require('../../assets/images/skum-pf/beer-cap.png')" alt="beer cap">
                     <h1 >SKUM</h1>
@@ -7,9 +7,8 @@
 
                 </section>
 
-                <section class="col-md-6 d-none d-md-block header-image-container">
-                    <img class="img-fluid float-end img-header-mockup" :src="require('../../assets/images/skum-pf/mockup-header.png')" alt="">
-
+                <section class="col-md-6 d-md-block header-image-container">
+                    <img class="img-fluid float-md-end img-header-mockup" :src="require('../../assets/images/skum-pf/mockup-header.png')" alt="">
                 </section>
                 <img class="img-fluid" :src="require('../../assets/images/skum-pf/header-divider.png')" alt="">
             </div>

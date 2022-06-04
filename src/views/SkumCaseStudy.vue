@@ -6,15 +6,16 @@
 
 
         <main class="container">
-            <h2 class="text-md-center">Project Overview</h2>
+            <h2 class="text-md-center mt-md-5">Project Overview</h2>
             <div class="row mt-5 justify-content-lg-center">
-                <section class="col-12 col-md-6 col-lg-5">
+                <div class="row justify-content-center py-5">
+                    <article class="col-12 col-md-6 col-lg-5 mb-4 mb-md-0">
                     <h4 class="col-12">Description</h4>
                     <p>
                         The SKUM app is made to give beer enthusiasts an easy to use platform where they can discover new beer and share their discoveries with friends. The focus when designing this app was to make it easy to learn with an intruction-based design.
                     </p>
-                </section>
-                <section class="col-12 col-md-6 col-lg-5">
+                </article>
+                <article class="col-12 col-md-6 col-lg-5">
                     <h4 class="col-12">My Role</h4>
                     <div class="row mt-3">
                         <skill-icon 
@@ -49,7 +50,9 @@
                         />
 
                     </div>
-                </section>
+                </article>
+                </div>
+                
                 <!-- PROBLEM POINTS AND SOLUTIONS -->
                 <div class="row justify-content-lg-center mt-5">
                     <section class="col-12 col-md-6 col-lg-5 ">
@@ -97,7 +100,7 @@
                     <img class="img-fluid" src="../assets/images/skum-pf/idemyldring.png" alt="" srcset="">
                 </section>
                 
-                <section class="mt-5">
+                <section class="my-5">
                     <div class="row">
                         <div class="col-12 col-md-7 col-lg-6">
                             <custom-subtitle 
@@ -113,7 +116,7 @@
                     </div>
                 </section>
 
-                <section class="mt-5">
+                <section class="my-5">
                     <custom-subtitle 
                         title="Let’s dive into the mind of our users"
                         class="dive"
@@ -123,7 +126,7 @@
                     </div>
                 </section>
 
-                <section class="mt-5">
+                <section class="my-5">
                     <custom-subtitle
                         title="Starting to conceptualize what we need"
                         class="sub-concept col-12"
@@ -134,7 +137,7 @@
                     </div>
                 </section>
 
-                <section class="mt-5">
+                <section class="my-5">
                     <custom-subtitle
                         title="Organizing everything so it’s easier to understand"
                         class="cs-org col-12"
