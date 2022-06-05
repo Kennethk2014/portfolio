@@ -11,7 +11,8 @@ const myProjectsService = (function(){
             secondaryColor: '#F0F1E9',
             imageUrl: 'skum-app-mockup.png',
             webUrl: '/portfolio/skum',
-            textColor: '#153136'
+            textColor: '#153136',
+            fontFamily: 'Inter',
         },
         {
             title: 'SMARTWATT',

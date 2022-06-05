@@ -226,6 +226,7 @@ export default {
 .skum-case-study{
     background: #F0F1E9;
     color: #153136;
+    font-family: 'Inter', sans-serif;
 }
 
 /* GENERAL STYLES */

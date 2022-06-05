@@ -3,14 +3,18 @@
         <div class="col">
             <a v-if="!isCaseStudy" :href="webUrl" target="_blank">
                 <img class="img-fluid" :src="require(`../../assets/images/${imageUrl}`)" alt="project mockup">
+                <div class="col text-center mt-2">
+                    <h5 style="font-weight: 700;" class="mb-0">{{title}}</h5>
+                    <p>{{tags}}</p>
+                </div>
             </a>
-            <router-link v-else :to="webUrl">
+            <router-link  v-else :to="webUrl">
                 <img class="img-fluid" :src="require(`../../assets/images/${imageUrl}`)" alt="project mockup">
+                <div class="col text-center mt-2">
+                    <h5 style="font-weight: 700;" class="mb-0">{{title}}</h5>
+                    <p>{{tags}}</p>
+                </div>
             </router-link>
-        </div>
-        <div class="col text-center mt-2">
-            <h5 style="font-weight: 500;" class="mb-0">{{title}}</h5>
-            <p>{{tags}}</p>
         </div>
     </article>
 </template>
@@ -31,5 +35,12 @@ export default {
 </script>
 
 <style scoped>
-
+*{
+    text-decoration: none;
+    color: #212121;
+}
+img{
+    width: 100%;
+    max-width: 1080px;
+}
 </style>

@@ -151,5 +151,6 @@ export default {
 
 .smartwatt-case-study{
     background-color: #FFF;
+    font-family: 'Montserrat';
 }
 </style>

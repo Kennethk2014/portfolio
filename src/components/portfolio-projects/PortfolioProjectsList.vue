@@ -10,6 +10,7 @@
             :imageUrl="object.imageUrl"
             :webUrl="object.webUrl"
             :isCaseStudy="object.isCaseStudy"
+            id="allProjects"
         />
     </div>
 

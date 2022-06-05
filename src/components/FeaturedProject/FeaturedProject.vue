@@ -1,6 +1,6 @@
 <template>
     <div class="row justify-content-between align-items-center featured-project-container" v-for="(project, i) in featuredProject" :key="i">
-        <div class="col-12 col-md-6">
+        <div  :style="{fontFamily: `${project.fontFamily}`}" class="col-12 col-md-6">
             
             <p class="intro-title">Featured project</p>
             <div class="py-4">
@@ -10,7 +10,7 @@
                 </router-link>
             </div>
             <div class="more-container mb-5 pt-md-5 mt-md-5">
-                <p class="mb-0">More projects</p>
+                <a href="/#allProjects" style="display: block" class="mb-0">More projects</a>
                 <i class="fas fa-caret-down"></i>
             </div>
         </div>
@@ -36,6 +36,9 @@ export default {
 </script>
 
 <style scoped>
+
+
+
 .featured-project-container{
     color: #212121;
     
@@ -52,8 +55,76 @@ export default {
     color: #666666;
     font-weight: 600;
 }
+.more-container > *{
+    color: #212121;
+    text-decoration: none;
+}
 .more-container{
     font-weight: 700;
+    display: inline-block;
+}
+@-webkit-keyframes wobble-ver-left {
+  0%,
+  100% {
+    -webkit-transform: translateY(0) rotate(0);
+            transform: translateY(0) rotate(0);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateY(-30px) rotate(-6deg);
+            transform: translateY(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateY(15px) rotate(6deg);
+            transform: translateY(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateY(-15px) rotate(-3.6deg);
+            transform: translateY(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateY(9px) rotate(2.4deg);
+            transform: translateY(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateY(-6px) rotate(-1.2deg);
+            transform: translateY(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes wobble-ver-left {
+  0%,
+  100% {
+    -webkit-transform: translateY(0) rotate(0);
+            transform: translateY(0) rotate(0);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateY(-30px) rotate(-6deg);
+            transform: translateY(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateY(15px) rotate(6deg);
+            transform: translateY(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateY(-15px) rotate(-3.6deg);
+            transform: translateY(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateY(9px) rotate(2.4deg);
+            transform: translateY(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateY(-6px) rotate(-1.2deg);
+            transform: translateY(-6px) rotate(-1.2deg);
+  }
+}
+.more-container:hover{
+    -webkit-animation: wobble-ver-left 0.8s both;
+    animation: wobble-ver-left 0.8s both;
+
 }
 .img-container{
     height: 400px;
