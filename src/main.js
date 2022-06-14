@@ -11,7 +11,7 @@ createApp(App)
 .use(router)
 .use(VueGtag, {
     config: {id: 'UA-209804149-1'}
-})
+}, router)
 .use(VueKinesis)
 .mount('#app')
 import 'bootstrap/dist/js/bootstrap.js';
