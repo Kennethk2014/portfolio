@@ -1,7 +1,6 @@
 <template>
     <header class="container mt-5 " id="home">
        <section class="row justify-content-between py-4 header-section">
-
                 <div class="col-12  col-md-6 title-container">
                     <h1 class="header-title">Hi, I’m Kenneth. <br>I help give lasting first impressions using design.</h1>
                     <p class="header-subtitle mt-md-4">First impressions is hard. By using design prinsiples and human-centered design, your website will stand out from the competition.</p>
@@ -81,11 +80,13 @@ export default {
 /* HEADER STYLE */
 .section-header{
     position: relative;
-}
 
+}
 .header-section{
     color: #212121;
+    overflow: hidden;
 }
+
 
 .header-title{
     font-weight: 500;
