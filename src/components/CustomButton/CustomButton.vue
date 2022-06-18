@@ -1,5 +1,7 @@
 <template>
-                        <button :type="type"  :class="className" >{{value}}</button>
+                        <button v-if="isIcon == true" :type="type"  :class="className" >{{value}} <i :class="icon" ></i></button>
+                        <button v-else :type="type"  :class="className" >{{value}}</button>
+
 </template>
 
 <script>
@@ -8,6 +10,8 @@ export default {
         type: String,
         className: String,
         value: String,
+        isIcon: Boolean,
+        icon: String
     }   
 }
 </script>

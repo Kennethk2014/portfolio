@@ -4,13 +4,22 @@
                 <div class="col-12  col-md-6 title-container">
                     <h1 class="header-title">Hi, I’m Kenneth. <br>I help give lasting first impressions using design.</h1>
                     <p class="header-subtitle mt-md-4">First impressions is hard. By using design prinsiples and human-centered design, your website will stand out from the competition.</p>
-                    <router-link to="/contact"><custom-button class="btn-outlined" type="button" value="Contact me"></custom-button></router-link>                    
+                    <a href="mailto:kennethk2014@gmail.com" target="_top"><custom-button :isIcon="true" icon="bi bi-arrow-up-right" class="btn-outlined" type="button" value="Contact me"></custom-button></a>                    
                 </div>
                 <div class="img-container mt-5 mt-md-0 col-12 col-md-5 col-lg-5">
                     <img class="img-fluid header-image" src="../assets/images/profil-image.jpg" alt="photography of me">
                 </div>
        </section>
     </header>
+
+    <section class="container py-4">
+        <h3 class="mt-5 pt-5 mb-lg-5 section-header testemonial-header">Testimonials</h3>
+        <div class="row mt-md-5 justify-content-center">
+            <testimonial-list></testimonial-list>
+
+        </div>
+
+    </section>
 
     <main class="container py-4" id="expertise">
         <h3 class="mt-5 pt-5 mb-lg-5 section-header">My Expertise</h3>
@@ -28,6 +37,11 @@
         <portfolio-projects-list />
     </section>
 
+    <section class="py-4 container">
+        <h3 class="mt-5 pt-5 mb-lg-5 section-header">Want to know more?</h3>
+       <a href="mailto:kennethk2014@gmail.com" target="_top"><custom-button :isIcon="true" icon="bi bi-arrow-up-right" type="button" class="btn-outlined" value="Send me an email"></custom-button></a> 
+    </section>
+
 </template>
 
 
@@ -38,9 +52,10 @@ import MyDesignSkillList from '../components/MyDesignSkills/MyDesignSkillList.vu
 import FeaturedProject from '../components/FeaturedProject/FeaturedProject.vue';
 import PortfolioProjectsList from '../components/portfolio-projects/PortfolioProjectsList.vue';
 import {gsap} from 'gsap';
+import TestimonialList from '../components/testimonialCard/testimonialList.vue';
 
 export default {
-  components: { PortfolioProjectsList, CustomButton, MyDesignSkillList, FeaturedProject},
+  components: { PortfolioProjectsList, CustomButton, MyDesignSkillList, FeaturedProject, TestimonialList},
 
     setup(){
         return{
@@ -86,7 +101,11 @@ export default {
     color: #212121;
     overflow: hidden;
 }
-
+.testemonial-header::after{
+    color: #a1a1a1;
+    display: block;
+    content: "Clients say";
+}
 
 .header-title{
     font-weight: 500;

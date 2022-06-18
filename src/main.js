@@ -5,6 +5,7 @@ import router from './router';
 import '@fortawesome/fontawesome-free/css/all.css';
 import VueKinesis from 'vue-kinesis';
 import VueGtag from 'vue-gtag';
+import "bootstrap-icons/font/bootstrap-icons.css"
 
 
 createApp(App)
