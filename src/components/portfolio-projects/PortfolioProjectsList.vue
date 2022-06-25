@@ -1,7 +1,7 @@
 <template>
     <div style="margin-top: 10rem;">
-        <h3>Work hard, seek knowledge</h3>
-        <h3 style="font-weight: 400; color: #666666;">Selected projects</h3>
+        <h3>My proudest</h3>
+        <h3 style="font-weight: 400; color: #A1A1A1;">Selected projects</h3>
     </div>
     <div class="row py-5">
         <portfolio-projects-item v-for="(object, i) in allProjects.slice(1,3) " :key="i"

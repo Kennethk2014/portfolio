@@ -2,8 +2,8 @@
     <header class="container mt-5 " id="home">
        <section class="row justify-content-between py-4 header-section">
                 <div class="col-12  col-md-6 title-container">
-                    <h1 class="header-title">Hi, I’m Kenneth. <br>I help give lasting first impressions using design.</h1>
-                    <p class="header-subtitle mt-md-4">First impressions is hard. By using design prinsiples and human-centered design, your website will stand out from the competition.</p>
+                    <h1 class="header-title">I create unique, branded websites for small businesses in Norway.</h1>
+                    <p class="header-subtitle mt-md-4">Let’s focus on solving business problems together, that's how we create good solutions.</p>
                     <a href="mailto:kennethk2014@gmail.com" target="_top"><custom-button :isIcon="true" icon="bi bi-arrow-up-right" class="btn-outlined" type="button" value="Contact me"></custom-button></a>                    
                 </div>
                 <div class="img-container mt-5 mt-md-0 col-12 col-md-5 col-lg-5">
@@ -96,6 +96,17 @@ export default {
 .section-header{
     position: relative;
 
+}
+
+.header-image{
+    height: auto;
+    width: 320px;
+    object-fit: contain;
+    border-radius: 3px;
+}
+.img-container{
+    display: flex;
+    justify-content: center;
 }
 .header-section{
     color: #212121;

@@ -17,10 +17,8 @@
 </template>
 
 <script>
-import {gsap} from 'gsap';
-import {ScrollTrigger} from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(ScrollTrigger);
+
 export default {
     props: {
         description: String,
@@ -29,31 +27,7 @@ export default {
         imageUrl: String,
         employeeRole: String,
     },
-    mounted(){
-        
-        let tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: '.testimonial-container',
-                start: "top center",
-                duration: 0.5,
-                opacity: 1,
-                y: 0,
-                ease: "power3",
-            }
-          })
-        
-        tl.addLabel("start")
-        .fromTo('.testimonial-container', 
-        {
-            opacity: 0,
-            y: 200,
     
-        },
-        {
-            opacity: 1,
-            y: 0,
-        });
-    }
 }
 </script>
 
