@@ -51,6 +51,15 @@
                         <experience-card
                         class="experience-card"
                         :isWork="true" 
+                        year="2022 - present"
+                        title="UX-design intern"
+                        desc="frog - designing user-oriented solutions that solves business problems"
+                        />
+                    </div>
+                    <div class="col-12">
+                        <experience-card
+                        class="experience-card"
+                        :isWork="true" 
                         year="2021 - present"
                         title="Student assistant"
                         desc="Høyskolen Kristiania - Helping students learn HTML, CSS &amp; JavaScript"
