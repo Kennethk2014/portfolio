@@ -23,7 +23,7 @@ const myProjectsService = (function(){
             imageUrl: 'smartwatt-app-mockup.jpg',
             webUrl: '/portfolio/smartwatt',
             textColor: 'rgba(0,0,0,0.87)',
-            tags: 'UI/UX Design, Branding'
+            tags: 'UI/UX, Design, Branding'
         },
         
         {
@@ -32,10 +32,10 @@ const myProjectsService = (function(){
             isCaseStudy: false,
             primaryColor: 'rgba(255,255,255,0.95)',
             secondaryColor: '#252F31',
-            imageUrl: 'photofindr-closup-mockup.jpg',
+            imageUrl: 'mockupphotofindr.jpg',
             webUrl: 'https://photofindr.com',
             textColor: 'rgba(255,255,255,0.87)',
-            tags: 'Development, UI/UX Design, Branding'
+            tags: 'Development, UI/UX, Design, Branding'
         },
     ])
 
