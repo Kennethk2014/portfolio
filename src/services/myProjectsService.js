@@ -9,10 +9,11 @@ const myProjectsService = (function(){
             isCaseStudy: true,
             primaryColor: '#153136',
             secondaryColor: '#F0F1E9',
-            imageUrl: 'skum-app-mockup.png',
+            imageUrl: 'skummockup.jpg',
             webUrl: '/portfolio/skum',
             textColor: '#153136',
             fontFamily: 'Inter',
+            tags: 'UI/UX, Design, Branding'
         },
         {
             title: 'SMARTWATT',
@@ -20,7 +21,7 @@ const myProjectsService = (function(){
             isCaseStudy: true,
             primaryColor: '#F83889',
             secondaryColor: '#fdfdfd',
-            imageUrl: 'smartwatt-app-mockup.jpg',
+            imageUrl: 'smartwattmockup.jpg',
             webUrl: '/portfolio/smartwatt',
             textColor: 'rgba(0,0,0,0.87)',
             tags: 'UI/UX, Design, Branding'
@@ -35,7 +36,8 @@ const myProjectsService = (function(){
             imageUrl: 'mockupphotofindr.jpg',
             webUrl: 'https://photofindr.com',
             textColor: 'rgba(255,255,255,0.87)',
-            tags: 'Development, UI/UX, Design, Branding'
+            tags: 'Development, UI/UX, Design, Branding',
+            fontFamily: 'Montserrat',
         },
     ])
 

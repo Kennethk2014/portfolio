@@ -4,7 +4,7 @@
         <h3 style="font-weight: 400; color: #A1A1A1;">Selected projects</h3>
     </div>
     <div class="row py-5">
-        <portfolio-projects-item v-for="(object, i) in allProjects.slice(1,3) " :key="i"
+        <portfolio-projects-item v-for="(object, i) in allProjects.slice(0,2) " :key="i"
             :title="object.title"
             :tags="object.tags"
             :imageUrl="object.imageUrl"
