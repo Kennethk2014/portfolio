@@ -35,14 +35,15 @@ export default {
     border: none;
     border-radius: 1px;
     padding: 10px 20px;
-    background: #2B331D;
+    background: #CB5555;
     color: rgba(255,255,255,0.87);
     font-weight: 500;
+    box-shadow: 4px 4px 0px #b62828;
+    transition: all 100ms linear;
     position: relative;
 }
 .btn-primary:hover{
-    box-shadow: 0px 10px 20px rgba(76, 77, 71, 0.1);
-    background: #363732;
+    box-shadow: none;
 
 }
 

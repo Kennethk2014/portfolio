@@ -1,10 +1,10 @@
 <template>
-    <header class="container mt-5 " id="home">
-       <section class="row justify-content-between py-4 header-section">
+    <header class="container-fluid py-5  " id="home">
+       <section class="row justify-content-center py-4 header-section">
                 <div class="col-12  col-md-6 title-container">
                     <h1 class="header-title">I create unique, branded websites for small businesses in Norway.</h1>
                     <p class="header-subtitle mt-md-4">Let’s focus on solving business problems together, that's how we create good solutions.</p>
-                    <a href="mailto:kennethk2014@gmail.com" target="_top"><custom-button :isIcon="true" icon="bi bi-arrow-up-right" class="btn-outlined" type="button" value="Contact me"></custom-button></a>                    
+                    <a href="mailto:kennethk2014@gmail.com" target="_top"><custom-button :isIcon="true" icon="bi bi-arrow-up-right" class="btn-primary" type="button" value="Contact me"></custom-button></a>                    
                 </div>
                 <div class="img-container mt-5 mt-md-0 col-12 col-md-5 col-lg-5">
                     <img class="img-fluid header-image" src="../assets/images/profil-image.jpg" alt="photography of me">
@@ -12,8 +12,8 @@
        </section>
     </header>
 
-    <section class="container py-4">
-        <h3 class="mt-5 pt-5 mb-lg-5 section-header testemonial-header">Testimonials</h3>
+    <section class="container">
+        <h3 class="mt-5 pt-xl-5 mb-lg-5 section-header testemonial-header">Testimonials</h3>
         <div class="row mt-md-5 justify-content-center">
             <testimonial-list></testimonial-list>
 
@@ -97,19 +97,23 @@ export default {
     position: relative;
 
 }
-
+header{
+    background: url("../assets/images/header-background.jpg");
+    background-size: cover;
+}
 .header-image{
     height: auto;
     width: 320px;
-    object-fit: contain;
-    border-radius: 3px;
+    object-fit: cover;
+    border-radius: 10px;
+    
 }
 .img-container{
     display: flex;
     justify-content: center;
 }
 .header-section{
-    color: #212121;
+    color: #f1f1f1;
     overflow: hidden;
 }
 .testemonial-header::after{
@@ -124,7 +128,7 @@ export default {
     line-height: 135%;
 }
 .header-subtitle{
-    color: #666666;
+    color: #b3b3b3;
     font-size: 1.1rem;
 }
 h3{
@@ -136,10 +140,10 @@ h3{
 }
 @media screen and (min-width: 1024px) {
     .header-title{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 .header-subtitle{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
     h3{
         font-size: 3rem;
@@ -147,10 +151,10 @@ h3{
 }
 @media screen and (min-width: 1440px) {
     .header-title{
-    font-size: 4rem;
+    font-size: 60px;
 }
 .header-subtitle{
-    font-size: 1.5rem;
+    font-size: 22px;
 }
     h3{
         font-size: 4rem;
