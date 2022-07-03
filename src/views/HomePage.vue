@@ -12,6 +12,11 @@
        </section>
     </header>
 
+    <section class="container py-4 mt-lg-4 overflow-hidden" id="portfolio">
+        <featured-project/>
+        <portfolio-projects-list />
+    </section>
+
     <section class="container">
         <h3 class="mt-5 pt-xl-5 mb-lg-5 section-header testemonial-header">Testimonials</h3>
         <div class="row mt-md-5 justify-content-center">
@@ -32,13 +37,10 @@
 
 
 
-    <section class="container py-4 overflow-hidden" id="portfolio">
-        <featured-project/>
-        <portfolio-projects-list />
-    </section>
 
-    <section class="py-4 container">
-        <h3 class="mt-5 pt-5 mb-lg-5 section-header">Want to know more?</h3>
+
+    <section class="pt-1 pb-5 container">
+        <h3 class="mt-1 pt-1 mb-lg-5 section-header">Want to know more?</h3>
        <a href="mailto:kennethk2014@gmail.com" target="_top"><custom-button :isIcon="true" icon="bi bi-arrow-up-right" type="button" class="btn-outlined" value="Send me an email"></custom-button></a> 
     </section>
 
