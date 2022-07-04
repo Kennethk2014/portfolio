@@ -19,8 +19,9 @@ export default {
 .btn-outlined{
     border-radius: 1px;
     padding: 10px 20px;
-    border: 2px solid #2B331D;
-    color: #2B331D;
+    border: 2px solid #CB5555;
+    font-weight: 700;
+    color: #CB5555;
     background: transparent;
     transition: all 50ms ease-out;
 }

@@ -5,11 +5,11 @@ const myProjectsService = (function(){
     const projects = ref([
         {
             title: 'Skum',
-            description: 'An app to give beer enthusiasts an easy to use platform where they can discover new beer and share their discoveries with friends.',
+            description: 'DISCOVER AND SHARE BEER WITH FRIENDS',
             isCaseStudy: true,
             primaryColor: '#153136',
             secondaryColor: '#F0F1E9',
-            imageUrl: 'skummockup.jpg',
+            imageUrl: 'https://firebasestorage.googleapis.com/v0/b/photofindr-86e94.appspot.com/o/company%2Fkennethux%2Fskummockup.jpg?alt=media&token=6813109f-d4c7-49f3-bc6e-d69148d66726',
             webUrl: '/portfolio/skum',
             textColor: '#153136',
             fontFamily: 'Inter',
@@ -17,11 +17,11 @@ const myProjectsService = (function(){
         },
         {
             title: 'SMARTWATT',
-            description: 'An app to help consumers take back the control of their energy usage by giving them tools to see what and where their energy consumption lies.',
+            description: 'TAKE BACK CONTROL OF YOUR ENERGY CONSUMPTION',
             isCaseStudy: true,
             primaryColor: '#F83889',
             secondaryColor: '#fdfdfd',
-            imageUrl: 'smartwattmockup.jpg',
+            imageUrl: 'https://firebasestorage.googleapis.com/v0/b/photofindr-86e94.appspot.com/o/company%2Fkennethux%2Fsmartwattmockup.jpg?alt=media&token=2c43bf41-b920-437b-abf4-d05b16f60fa0',
             webUrl: '/portfolio/smartwatt',
             textColor: 'rgba(0,0,0,0.87)',
             tags: 'UI/UX, Design, Branding'
@@ -29,11 +29,11 @@ const myProjectsService = (function(){
         
         {
             title: 'PhotoFindr',
-            description: 'A website that holds a hand-picked community of photographers. The website explores a different way for photographers to get discovered and will help them begin make money off their skills.',
+            description: 'KICKSTART YOUR PHOTOGRAPHY CAREER',
             isCaseStudy: false,
             primaryColor: 'rgba(255,255,255,0.95)',
             secondaryColor: '#252F31',
-            imageUrl: 'mockupphotofindr.jpg',
+            imageUrl: 'https://firebasestorage.googleapis.com/v0/b/photofindr-86e94.appspot.com/o/company%2Fkennethux%2Fmockupphotofindr.jpg?alt=media&token=11608ff6-6426-4c5e-9e53-3ace66a314c5',
             webUrl: 'https://photofindr.com',
             textColor: 'rgba(255,255,255,0.87)',
             tags: 'Development, UI/UX, Design, Branding',

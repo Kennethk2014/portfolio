@@ -13,7 +13,6 @@
     </header>
 
     <section class="container py-4 mt-lg-4 overflow-hidden" id="portfolio">
-        <featured-project/>
         <portfolio-projects-list />
     </section>
 
@@ -51,13 +50,12 @@
 
 import CustomButton from '../components/CustomButton/CustomButton.vue';
 import MyDesignSkillList from '../components/MyDesignSkills/MyDesignSkillList.vue';
-import FeaturedProject from '../components/FeaturedProject/FeaturedProject.vue';
 import PortfolioProjectsList from '../components/portfolio-projects/PortfolioProjectsList.vue';
 import {gsap} from 'gsap';
 import TestimonialList from '../components/testimonialCard/testimonialList.vue';
 
 export default {
-  components: { PortfolioProjectsList, CustomButton, MyDesignSkillList, FeaturedProject, TestimonialList},
+  components: { PortfolioProjectsList, CustomButton, MyDesignSkillList, TestimonialList},
 
     setup(){
         return{

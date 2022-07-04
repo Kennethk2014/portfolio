@@ -1,11 +1,8 @@
 <template>
-    <div style="margin-top: 10rem;">
-        <h3>My work</h3>
-        <h3 style="font-weight: 400; color: #A1A1A1;">Selected projects</h3>
-    </div>
-    <div class="row py-5">
-        <portfolio-projects-item v-for="(object, i) in allProjects.slice(0,2) " :key="i"
+    <div class="row py-5 gap-5">
+        <portfolio-projects-item v-for="(object, i) in allProjects " :key="i"
             :title="object.title"
+            :description="object.description"
             :tags="object.tags"
             :imageUrl="object.imageUrl"
             :webUrl="object.webUrl"
@@ -24,7 +21,7 @@ export default {
   components: { PortfolioProjectsItem },
     props:{
         projectName: String,
-        desc: String,
+        description: String,
         image: String,
         link: String,
         projectNameTxtImport: String,
